@@ -114,7 +114,7 @@ on boot
 	chmod 0660 /sys/goodix_gesture/gesture_enable
     chown system system /sys/goodix_gesture/gesture_enable
 	chmod 0660 /sys/devices/soc/78b7000.i2c/i2c-3/3-0038/input/input2/device/fts_gesture_mode
-	chown system system 0660 /sys/devices/soc/78b7000.i2c/i2c-3/3-0038/input/input2/device/fts_gesture_mode
+	chown system system /sys/devices/soc/78b7000.i2c/i2c-3/3-0038/input/input2/device/fts_gesture_mode
 	 
     # IR blaster
     chown root system /sys/class/leds/infrared/transmit
