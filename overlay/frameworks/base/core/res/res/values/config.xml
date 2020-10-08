@@ -332,4 +332,7 @@
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
 	
+	 <!-- Disable button brightness settings -->
+    <integer name="config_buttonBrightnessSettingDefault">0</integer>
+	<integer name="config_longPressOnHomeBehavior">2</integer>  
 </resources>
