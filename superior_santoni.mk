@@ -32,6 +32,8 @@ PRODUCT_MANUFACTURER := Xiaomi
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 720
 
+SUPERIOR_BUILD_TYPE := HOMEMADE
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Build fingerprint
