@@ -354,9 +354,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    power.qcom \
-    android.hardware.power@1.0-impl \
-    android.hardware.power@1.0-service
+    android.hardware.power@1.2-service-qti
 
 # Platform
 PRODUCT_BOARD_PLATFORM := msm8996
