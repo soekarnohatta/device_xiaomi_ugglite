@@ -15,9 +15,9 @@
 //
 
 cc_library_static {
-    name: "libinit_santoni",
+    name: "libinit_ugglite",
     recovery_available: true,
-    srcs: ["init_santoni.cpp"],
+    srcs: ["init_ugglite.cpp"],
     include_dirs: [
         "system/core/base/include",
         "system/core/init",

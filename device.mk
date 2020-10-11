@@ -19,7 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
-$(call inherit-product, vendor/xiaomi/santoni/santoni-vendor.mk)
+$(call inherit-product, vendor/xiaomi/ugglite/ugglite-vendor.mk)
 
 #HAls
 PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/display
@@ -451,7 +451,7 @@ PRODUCT_HOST_PACKAGES += \
     signapk
 
 # Soong namespaces
-PRODUCT_SOONG_NAMESPACES += device/xiaomi/santoni
+PRODUCT_SOONG_NAMESPACES += device/xiaomi/ugglite
 
 # TextClassifier
 PRODUCT_PACKAGES += \
@@ -468,7 +468,7 @@ PRODUCT_COPY_FILES += \
 
 # USB HAL
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.santoni
+    android.hardware.usb@1.0-service.ugglite
 
 # Vibrator
 PRODUCT_PACKAGES += \
@@ -522,7 +522,7 @@ PRODUCT_PACKAGES += \
 #XiaomiAddon
 PRODUCT_PACKAGES += \
     XiaomiAddon
-	
+		
 #XiaomiParts
 PRODUCT_PACKAGES += \
     XiaomiParts

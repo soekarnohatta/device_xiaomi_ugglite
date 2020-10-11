@@ -25,7 +25,7 @@ fi
 set -e
 
 # Required!
-DEVICE=santoni
+DEVICE=ugglite
 VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks
@@ -81,5 +81,10 @@ extract "${MY_DIR}"/proprietary-files-qc.txt "$SRC" \
 # Hax for cam configs
 CAMERA2_SENSOR_MODULES="${AOSP_ROOT}"/vendor/"${VENDOR}"/"${DEVICE}"/proprietary/vendor/lib/libmmcamera2_sensor_modules.so
 sed -i "s|/system/etc/camera/|/vendor/etc/camera/|g" "${CAMERA2_SENSOR_MODULES}"
+
+# Shim libandroid for camera blobs
+patchelf --replace-needed libandroid.so libandroid_shim.so "${AOSP_ROOT}"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib/libmmcamera2_stats_modules.so
+patchelf --replace-needed libandroid.so libandroid_shim.so "${AOSP_ROOT}"/vendor/"$VENDOR"/"$DEVICe"/proprietary/vendor/lib/libmpbase.so
+
 
 "${MY_DIR}"/setup-makefiles.sh
